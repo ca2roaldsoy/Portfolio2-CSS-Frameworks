@@ -10,8 +10,8 @@
       img-height="480"
     >
       <b-carousel-slide
-        v-for="(img, i) in banner"
-        :key="i"
+        v-for="(img, index) in images"
+        :key="index"
         :img-src="img.image"
       ></b-carousel-slide>
     </b-carousel>
@@ -31,10 +31,10 @@ export default {
   data() {
     return {
       slide: 0,
-      banner: [
-        { image: "../assets/images/banner1.jpg" },
-        { image: "../assets/images/banner2.jpg" },
-        { image: "../assets/images/banner3.jpg" },
+      images: [
+        { image: require("../assets/images/banner1.jpg") },
+        { image: require("../assets/images/banner2.jpg") },
+        { image: require("../assets/images/banner3.jpg") },
       ],
     };
   },
