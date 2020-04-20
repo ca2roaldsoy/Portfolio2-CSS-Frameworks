@@ -1,12 +1,14 @@
 <template>
   <div>
-    <NavbarComponent></NavbarComponent>
+    <NavbarComponent />
     <CarouselComponent />
-    <div class="row">
-      <div v-for="num in 4" v-bind:key="num">
-        <PackagesComponent v-bind:num="num"></PackagesComponent>
+    <main role="main" class="card-group container">
+      <h1>Welcome to January Island Escapes</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia consequuntur, explicabo officiis sunt. Doloremque quas rem corrupti, odit quasi qui quod nihil fuga. Sint, dolorem magni vero architecto dolore ab!</p>
+      <div v-for="num in 4" v-bind:key="num" class="col-sm-6 col-md-4 col-lg-3 package pl-0">
+        <PackagesComponent v-bind:num="num" />
       </div>
-    </div>
+    </main>
   </div>
 </template>
 
@@ -20,7 +22,14 @@ export default {
   components: {
     PackagesComponent,
     NavbarComponent,
-    CarouselComponent,
-  },
+    CarouselComponent
+  }
 };
 </script>
+
+<style>
+.package,
+main {
+  margin-top: 20px;
+}
+</style>

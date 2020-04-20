@@ -1,4 +1,4 @@
-module.exports = {
+/*module.exports = {
   chainWebpack: (config) => {
     config.module
       .rule("vue")
@@ -21,4 +21,4 @@ module.exports = {
         return options;
       });
   },
-};
+};*/

@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid p-0">
     <b-carousel
       id="carousel-1"
       v-model="slide"
@@ -9,11 +9,7 @@
       img-width="1024"
       img-height="480"
     >
-      <b-carousel-slide
-        v-for="(img, index) in images"
-        :key="index"
-        :img-src="img.image"
-      ></b-carousel-slide>
+      <b-carousel-slide v-for="(img, index) in images" :key="index" :img-src="img.image"></b-carousel-slide>
     </b-carousel>
   </div>
 </template>
@@ -25,7 +21,7 @@ export default {
   name: "CarouselComponent",
   components: {
     BCarousel,
-    BCarouselSlide,
+    BCarouselSlide
   },
 
   data() {
@@ -34,9 +30,9 @@ export default {
       images: [
         { image: require("../assets/images/banner1.jpg") },
         { image: require("../assets/images/banner2.jpg") },
-        { image: require("../assets/images/banner3.jpg") },
-      ],
+        { image: require("../assets/images/banner3.jpg") }
+      ]
     };
-  },
+  }
 };
 </script>
