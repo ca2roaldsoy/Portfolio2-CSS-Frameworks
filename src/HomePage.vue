@@ -9,20 +9,23 @@
         <PackagesComponent v-bind:num="num" />
       </div>
     </main>
+    <FooterComponent />
   </div>
 </template>
 
 <script>
-import PackagesComponent from "./components/PackagesComponent.vue";
-import NavbarComponent from "./components/NavbarComponent.vue";
-import CarouselComponent from "./components/CarouselComponent.vue";
+import PackagesComponent from "./components/home/PackagesComponent.vue";
+import NavbarComponent from "./components/navbar/NavbarComponent.vue";
+import CarouselComponent from "./components/home/CarouselComponent.vue";
+import FooterComponent from "./components/footer/FooterComponent.vue";
 
 export default {
   name: "HomePage",
   components: {
     PackagesComponent,
     NavbarComponent,
-    CarouselComponent
+    CarouselComponent,
+    FooterComponent
   }
 };
 </script>
