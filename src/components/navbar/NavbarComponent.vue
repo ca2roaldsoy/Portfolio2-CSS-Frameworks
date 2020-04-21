@@ -4,7 +4,6 @@
       <b-navbar-brand href="/">January Island Escape</b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse" />
-
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
           <router-link to="/">Home</router-link>
@@ -22,12 +21,12 @@ import {
   BNavbarNav,
   BNavbarBrand,
   BNavbarToggle,
-  BCollapse
+  BCollapse,
 } from "bootstrap-vue";
 
 export default {
   name: "NavbarComponent",
-  components: { BNavbar, BNavbarNav, BNavbarBrand, BNavbarToggle, BCollapse }
+  components: { BNavbar, BNavbarNav, BNavbarBrand, BNavbarToggle, BCollapse },
 };
 </script>
 
