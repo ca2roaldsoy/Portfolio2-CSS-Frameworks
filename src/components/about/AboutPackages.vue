@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="card">
     <h3 class="card-title">Package {{n}}</h3>
     <p class="card-text">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
@@ -17,3 +17,11 @@ export default {
   props: ["n"]
 };
 </script>
+
+<style scoped>
+.card {
+  margin: 20px 20px 20px 0px;
+  padding: 10px;
+  border: 1px solid #ffb01d;
+}
+</style>

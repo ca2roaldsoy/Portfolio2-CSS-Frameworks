@@ -30,3 +30,10 @@ export default {
   components: { BNavbar, BNavbarNav, BNavbarBrand, BNavbarToggle, BCollapse }
 };
 </script>
+
+<style scoped>
+ul > a {
+  color: white;
+  padding-left: 15px;
+}
+</style>
