@@ -1,6 +1,5 @@
 <template>
   <div>
-    <NavbarComponent />
     <CarouselComponent />
     <main role="main" class="card-group container">
       <h1>Welcome to January Island Escapes</h1>
@@ -15,7 +14,6 @@
 
 <script>
 import PackagesComponent from "./components/home/PackagesComponent.vue";
-import NavbarComponent from "./components/navbar/NavbarComponent.vue";
 import CarouselComponent from "./components/home/CarouselComponent.vue";
 import FooterComponent from "./components/footer/FooterComponent.vue";
 
@@ -23,7 +21,6 @@ export default {
   name: "HomePage",
   components: {
     PackagesComponent,
-    NavbarComponent,
     CarouselComponent,
     FooterComponent
   }
