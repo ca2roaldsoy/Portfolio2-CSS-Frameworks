@@ -4,6 +4,7 @@
       <b-form-group label-for="firstname" label="First Name">
         <b-form-input
           name="firstname"
+          type="text"
           id="firstname"
           v-model="firstname"
           required
@@ -14,6 +15,7 @@
       <b-form-group label-for="lastname" label="Last Name">
         <b-form-input
           name="lastname"
+          type="text"
           id="lastname"
           v-model="lastname"
           required
@@ -57,7 +59,6 @@ export default {
       lastname: "",
       telephone: "",
       email: "",
-      errors: [],
     };
   },
 
@@ -68,12 +69,6 @@ export default {
     onReset(e) {
       e.preventDefault();
       this.firstname = "";
-    },
-  },
-
-  computed: {
-    validate() {
-      return this.firstname.length > 1, this.lastname.length > 1;
     },
   },
 };

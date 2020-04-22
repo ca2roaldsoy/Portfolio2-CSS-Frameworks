@@ -10,7 +10,6 @@
   "dependencies": {
     "bootstrap-vue": "^2.11.0",
     "core-js": "^3.6.4",
-    "vee-validate": "^3.3.0",
     "vue": "^2.6.11",
     "vue-carousel": "^0.18.0",
     "vue-router": "^3.1.6"
