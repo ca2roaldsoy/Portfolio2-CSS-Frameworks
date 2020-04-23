@@ -9,15 +9,10 @@
         odit quasi qui quod nihil fuga. Sint, dolorem magni vero architecto
         dolore ab!
       </p>
-      <div
-        v-for="num in 4"
-        v-bind:key="num"
-        class="col-sm-6 col-md-4 col-lg-3 package pl-0"
-      >
+      <section v-for="num in 4" v-bind:key="num" class="col-sm-6 col-md-4 col-lg-3 package pl-0">
         <PackagesComponent v-bind:num="num" />
-      </div>
+      </section>
     </main>
-    <FooterComponent />
   </div>
 </template>
 
@@ -29,8 +24,8 @@ export default {
   name: "HomePage",
   components: {
     PackagesComponent,
-    CarouselComponent,
-  },
+    CarouselComponent
+  }
 };
 </script>
 

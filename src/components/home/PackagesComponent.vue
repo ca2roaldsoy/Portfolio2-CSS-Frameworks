@@ -7,7 +7,7 @@
       repellendus fuga, iure molestias labore amet! Placeat corporis quidem
       molestias, provident!
     </p>
-    <b-button variant="warning">Find out more</b-button>
+    <b-button variant="warning" role="button">Find out more</b-button>
   </div>
 </template>
 

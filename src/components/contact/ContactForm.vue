@@ -1,5 +1,5 @@
 <template>
-  <v-form ref="form" v-model="valid" lazy-validation>
+  <v-form ref="form" v-model="valid" lazy-validation role="form">
     <div class="row">
       <v-text-field
         v-model="firstname"
@@ -34,17 +34,9 @@
       ></v-text-field>
     </div>
 
-    <v-btn
-      :disabled="!valid"
-      class="mr-4 col-sm-2 btn btn-warning"
-      @click="submit"
-    >
-      Submit
-    </v-btn>
+    <v-btn :disabled="!valid" class="mr-4 col-sm-2 btn btn-warning" @click="submit">Submit</v-btn>
 
-    <v-btn class="mr-4 col-sm-2 btn btn-danger" @click="reset">
-      Reset Form
-    </v-btn>
+    <v-btn class="mr-4 col-sm-2 btn btn-danger" @click="reset">Reset Form</v-btn>
   </v-form>
 </template>
 
@@ -55,20 +47,20 @@ export default {
   data: () => ({
     valid: true,
     firstname: "",
-    firstNameRules: [(v) => !!v || "First name is required"],
+    firstNameRules: [v => !!v || "First name is required"],
     lastname: "",
-    lastNameRules: [(v) => !!v || "Last name is required"],
+    lastNameRules: [v => !!v || "Last name is required"],
     telephone: "",
     telRules: [
-      (v) => !!v || "Telephone Number is required",
-      (v) => /[0-9]/.test(v) || "Telephone must be a number",
+      v => !!v || "Telephone Number is required",
+      v => /[0-9]/.test(v) || "Telephone must be a number"
     ],
 
     email: "",
     emailRules: [
-      (v) => !!v || "E-mail is required",
-      (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
-    ],
+      v => !!v || "E-mail is required",
+      v => /.+@.+\..+/.test(v) || "E-mail must be valid"
+    ]
   }),
 
   methods: {
@@ -77,8 +69,8 @@ export default {
     },
     reset() {
       this.$refs.form.reset();
-    },
-  },
+    }
+  }
 };
 </script>
 

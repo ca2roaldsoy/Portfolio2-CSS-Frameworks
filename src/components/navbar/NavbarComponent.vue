@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="md" type="dark" variant="primary">
+    <b-navbar toggleable="md" type="dark" variant="primary" role="navigation">
       <b-navbar-brand href="/">January Island Escape</b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse" />
@@ -21,12 +21,12 @@ import {
   BNavbarNav,
   BNavbarBrand,
   BNavbarToggle,
-  BCollapse,
+  BCollapse
 } from "bootstrap-vue";
 
 export default {
   name: "NavbarComponent",
-  components: { BNavbar, BNavbarNav, BNavbarBrand, BNavbarToggle, BCollapse },
+  components: { BNavbar, BNavbarNav, BNavbarBrand, BNavbarToggle, BCollapse }
 };
 </script>
 
