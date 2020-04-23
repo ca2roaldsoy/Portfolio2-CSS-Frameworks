@@ -2,14 +2,24 @@ import Vue from "vue";
 import VueCarousel from "vue-carousel";
 import App from "./App.vue";
 import BootstrapVue from "bootstrap-vue";
+import Vuetify from "vuetify";
+import VueForm from "vue-form";
 import VueRouter from "vue-router";
 import HomePage from "./HomePage.vue";
 import AboutPage from "./AboutPage.vue";
+import ContactPage from "./ContactPage.vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 Vue.use(VueRouter);
 Vue.use(BootstrapVue);
 Vue.use(VueCarousel);
+Vue.use(Vuetify);
+Vue.use(VueForm, {
+  inputClasses: {
+    valid: "form-control-success",
+    invalid: "form-control-danger",
+  },
+});
 
 const router = new VueRouter({
   routes: [
@@ -23,6 +33,12 @@ const router = new VueRouter({
       name: "About",
       component: AboutPage,
     },
+
+    {
+      path: "/ContactPage",
+      name: "Contact",
+      component: ContactPage,
+    },
   ],
 });
 
@@ -30,5 +46,6 @@ Vue.config.productionTip = false;
 
 new Vue({
   render: (h) => h(App),
+  Vuetify,
   router,
 }).$mount("#app");
