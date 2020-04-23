@@ -3,7 +3,6 @@ import VueCarousel from "vue-carousel";
 import App from "./App.vue";
 import BootstrapVue from "bootstrap-vue";
 import Vuetify from "vuetify";
-import VueForm from "vue-form";
 import VueRouter from "vue-router";
 import HomePage from "./HomePage.vue";
 import AboutPage from "./AboutPage.vue";
@@ -14,12 +13,6 @@ Vue.use(VueRouter);
 Vue.use(BootstrapVue);
 Vue.use(VueCarousel);
 Vue.use(Vuetify);
-Vue.use(VueForm, {
-  inputClasses: {
-    valid: "form-control-success",
-    invalid: "form-control-danger",
-  },
-});
 
 const router = new VueRouter({
   routes: [
