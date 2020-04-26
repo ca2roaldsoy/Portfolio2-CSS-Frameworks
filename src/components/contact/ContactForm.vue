@@ -47,19 +47,19 @@ export default {
   data: () => ({
     valid: true,
     firstname: "",
-    firstNameRules: [v => !!v || "First name is required"],
+    firstNameRules: [inputfield => !!inputfield || "First name is required"],
     lastname: "",
-    lastNameRules: [v => !!v || "Last name is required"],
+    lastNameRules: [inputfield => !!inputfield || "Last name is required"],
     telephone: "",
     telRules: [
-      v => !!v || "Telephone Number is required",
-      v => /[0-9]/.test(v) || "Telephone must be a number"
+      inputfield => !!inputfield || "Telephone Number is required",
+      inputfield => /[0-9]/.test(inputfield) || "Telephone must be a number"
     ],
 
     email: "",
     emailRules: [
-      v => !!v || "E-mail is required",
-      v => /.+@.+\..+/.test(v) || "E-mail must be valid"
+      inputfield => !!inputfield || "E-mail is required",
+      inputfield => /.+@.+\..+/.test(inputfield) || "E-mail must be valid"
     ]
   }),
 
