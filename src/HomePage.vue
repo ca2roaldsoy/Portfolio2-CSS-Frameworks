@@ -30,7 +30,6 @@ export default {
 </script>
 
 <style>
-.package,
 main {
   margin-top: 20px;
 }

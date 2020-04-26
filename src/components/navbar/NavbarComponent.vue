@@ -1,7 +1,7 @@
 <template>
   <div>
-    <b-navbar toggleable="md" type="dark" variant="primary" role="navigation">
-      <b-navbar-brand href="/">January Island Escape</b-navbar-brand>
+    <b-navbar toggleable="md" role="navigation">
+      <b-navbar-brand href="/">January Island Escapes</b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse" />
       <b-collapse id="nav-collapse" is-nav>
@@ -30,9 +30,23 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@font-face {
+  font-family: "Arkipelago-MxRJ";
+  src: url("~@/assets/fonts/Arkipelago-MxRJ.otf");
+}
+
+.navbar-brand {
+  font-family: "Arkipelago-MxRJ", serif;
+  font-size: 32px;
+}
+
 ul > a {
-  color: white;
+  color: black;
   padding-left: 15px;
+}
+
+.navbar {
+  background-color: #ff9a44;
 }
 </style>

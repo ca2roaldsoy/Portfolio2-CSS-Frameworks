@@ -7,7 +7,7 @@
       repellendus fuga, iure molestias labore amet! Placeat corporis quidem
       molestias, provident!
     </p>
-    <b-button variant="warning" role="button">Find out more</b-button>
+    <b-button role="button">Find out more</b-button>
   </div>
 </template>
 
@@ -17,3 +17,14 @@ export default {
   props: ["num"]
 };
 </script>
+
+<style lang="scss" scoped>
+.package {
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #ff9a44;
+  color: black;
+}
+</style>

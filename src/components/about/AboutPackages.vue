@@ -14,7 +14,7 @@
 <script>
 export default {
   name: "AboutPackages",
-  props: ["n"],
+  props: ["n"]
 };
 </script>
 
@@ -28,5 +28,10 @@ export default {
     background-color: #f7dfb5;
     cursor: pointer;
   }
+}
+
+.btn {
+  background-color: #ff9a44;
+  color: black;
 }
 </style>

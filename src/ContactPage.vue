@@ -16,6 +16,6 @@ import ContactForm from "./components/contact/ContactForm";
 
 export default {
   name: "ContactPage",
-  components: { ContactForm },
+  components: { ContactForm }
 };
 </script>
